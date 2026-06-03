@@ -1,9 +1,13 @@
 # Prompts
 
 ## Modes
+
 Agent: Agent
 Thinking Effort: Medium
-Model: GPT-5.2 ou Claude Haiku 4.5
+Model: GPT-5.2
+
+Agent: Agent
+Model: Claude Haiku 4.5
 
 # A04:2025 - Cryptographic Failures
 
