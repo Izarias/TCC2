@@ -1,0 +1,4343 @@
+{
+    "total": 63,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 63
+    },
+    "effortTotal": 902,
+    "issues": [
+        {
+            "key": "54718e28-d780-414b-8f46-601615ab6b8c",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/D-A01-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 12,
+            "hash": "2c8ab874a12f960e32f6aa55e0823571",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 14,
+                "endOffset": 21
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this parameter \"orderId\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "bee16e00-119e-44c7-bbe9-3e2fb81e9c81",
+            "rule": "python:S2068",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/D-A07-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 45,
+            "hash": "444b3c0476976ffe1307fa1d61721e4d",
+            "textRange": {
+                "startLine": 45,
+                "endLine": 45,
+                "startOffset": 48,
+                "endOffset": 73
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\"password\" detected here, review this potentially hard-coded credential.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "a4077086-7ce0-4bb4-b914-6d5ef8edc42b",
+            "rule": "python:S2068",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/F-A07-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 6,
+            "hash": "3eac0a5827cc23a799d96146b2028ac8",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 11,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\"SECRET_KEY\" detected here, review this potentially hard-coded credential.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "db198257-7d9b-4200-ae39-c2dc29b07fdf",
+            "rule": "python:S6779",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/F-A07-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 6,
+            "hash": "3eac0a5827cc23a799d96146b2028ac8",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 27,
+                "endOffset": 56
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A07-EN-PY-C4.py",
+                            "textRange": {
+                                "startLine": 6,
+                                "endLine": 6,
+                                "startOffset": 0,
+                                "endOffset": 24
+                            },
+                            "msg": "Assignment to sensitive property.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Don't disclose \"Flask\" secret keys.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "cwe",
+                "flask"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "165f1a17-d771-4e52-b439-eb65935297d7",
+            "rule": "python:S6437",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/F-A07-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 13,
+            "hash": "e0e552d232a0206315168ef432bfa8d9",
+            "textRange": {
+                "startLine": 13,
+                "endLine": 13,
+                "startOffset": 43,
+                "endOffset": 59
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Revoke and change this password, as it is compromised.",
+            "effort": "1h",
+            "debt": "1h",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "b3a57c28-08d9-4753-a6b7-8ab96498e890",
+            "rule": "python:S2068",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/F-A07-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 8,
+            "hash": "06de6f60f89516f6d4aabc3661f42d4c",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 27,
+                "endOffset": 54
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\"password\" detected here, review this potentially hard-coded credential.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "5a77862e-007e-4c8a-8b54-d13d4fb254e8",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/Z-A01-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 14,
+            "hash": "2c8ab874a12f960e32f6aa55e0823571",
+            "textRange": {
+                "startLine": 14,
+                "endLine": 14,
+                "startOffset": 14,
+                "endOffset": 21
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this parameter \"orderId\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "af719074-db30-4559-8b2e-4a77947d6a81",
+            "rule": "python:S8392",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/Z-A01-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 25,
+            "hash": "4a21812a2b7eb96eabdb467ea7ca25a7",
+            "textRange": {
+                "startLine": 25,
+                "endLine": 25,
+                "startOffset": 4,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid binding the application to all network interfaces.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "fastapi",
+                "least-privilege",
+                "uvicorn",
+                "flask",
+                "deployment",
+                "network"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "594bb10a-ba5f-4cd2-bb3e-9d086ed5c942",
+            "rule": "python:S8392",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/Z-A01-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 33,
+            "hash": "7af35d3693ab3045ad1e5fd5339944d5",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 4,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid binding the application to all network interfaces.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "fastapi",
+                "least-privilege",
+                "uvicorn",
+                "flask",
+                "deployment",
+                "network"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "56e39382-f8af-47ac-a1f1-877937087fd8",
+            "rule": "python:S2068",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/Z-A07-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 6,
+            "hash": "af30349642c15bc1b2f50145c18fb911",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 13,
+                "endOffset": 36
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\"password\" detected here, review this potentially hard-coded credential.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "b4c0bc94-8b12-44c3-b4d7-bfe637d62e87",
+            "rule": "python:S8392",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/Z-A07-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 41,
+            "hash": "4a21812a2b7eb96eabdb467ea7ca25a7",
+            "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 4,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid binding the application to all network interfaces.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "fastapi",
+                "least-privilege",
+                "uvicorn",
+                "flask",
+                "deployment",
+                "network"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "a9b125f9-a116-44fb-a5a0-851c2124d258",
+            "rule": "python:S2068",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/Z-A07-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 7,
+            "hash": "b6fe0f4b23ea23b459c2e11b1fc9c3a2",
+            "textRange": {
+                "startLine": 7,
+                "endLine": 7,
+                "startOffset": 29,
+                "endOffset": 51
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\"password\" detected here, review this potentially hard-coded credential.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "0eb220e5-902c-4e8b-8013-522186f560d0",
+            "rule": "python:S2068",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/Z-A07-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 8,
+            "hash": "121a7004565bd072cac18916c070e92d",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 27,
+                "endOffset": 47
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\"password\" detected here, review this potentially hard-coded credential.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "pedroaugustoizarias@gmail.com",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-06T16:44:00-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "1808ae93-9bc3-4d4d-865b-da038196e700",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/D-A01-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 13,
+            "hash": "2c8ab874a12f960e32f6aa55e0823571",
+            "textRange": {
+                "startLine": 13,
+                "endLine": 13,
+                "startOffset": 14,
+                "endOffset": 21
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this parameter \"orderId\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "63654a61-748c-493b-af7a-cd011406183b",
+            "rule": "python:S6437",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/D-A07-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 21,
+            "hash": "b1b44d98aa7fb69d31ff1e971a2225c0",
+            "textRange": {
+                "startLine": 21,
+                "endLine": 21,
+                "startOffset": 55,
+                "endOffset": 69
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Revoke and change this password, as it is compromised.",
+            "effort": "1h",
+            "debt": "1h",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "3e5808c8-553f-4c72-ad39-9817f303c67e",
+            "rule": "python:S6437",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/D-A07-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 39,
+            "hash": "0ff14e3c84e107e5b1d096970aba1e0e",
+            "textRange": {
+                "startLine": 39,
+                "endLine": 39,
+                "startOffset": 44,
+                "endOffset": 55
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Revoke and change this password, as it is compromised.",
+            "effort": "1h",
+            "debt": "1h",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "c10d54d9-a12c-4a70-8b10-a69c717edf29",
+            "rule": "python:S6903",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/D-A07-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 39,
+            "hash": "0ff14e3c84e107e5b1d096970aba1e0e",
+            "textRange": {
+                "startLine": 39,
+                "endLine": 39,
+                "startOffset": 58,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don't use `datetime.datetime.utcnow` to create this datetime object.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "datetime",
+                "pitfall"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "71c3a5e6-7f0b-4690-b7b2-2f857d84136c",
+            "rule": "python:S6903",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/D-A07-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 83,
+            "hash": "bdedeec2a49048a2522763247cd6bc0a",
+            "textRange": {
+                "startLine": 83,
+                "endLine": 83,
+                "startOffset": 16,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Don't use `datetime.datetime.utcnow` to create this datetime object.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "datetime",
+                "pitfall"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                },
+                {
+                    "softwareQuality": "RELIABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "f2d16016-eadc-4012-9dc7-aafaec73e89b",
+            "rule": "python:S117",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/F-A01-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 37,
+            "hash": "2c8ab874a12f960e32f6aa55e0823571",
+            "textRange": {
+                "startLine": 37,
+                "endLine": 37,
+                "startOffset": 14,
+                "endOffset": 21
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this parameter \"orderId\" to match the regular expression ^[_a-z][a-z0-9_]*$.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "IDENTIFIABLE",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "144a8439-1e7b-4484-b04a-57ea64cdc7b7",
+            "rule": "python:S8392",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/F-A01-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 50,
+            "hash": "4a21812a2b7eb96eabdb467ea7ca25a7",
+            "textRange": {
+                "startLine": 50,
+                "endLine": 50,
+                "startOffset": 4,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid binding the application to all network interfaces.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "fastapi",
+                "least-privilege",
+                "uvicorn",
+                "flask",
+                "deployment",
+                "network"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "f87b7297-b1e8-465f-8c57-5f7661e68aa7",
+            "rule": "python:S6437",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/F-A07-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 11,
+            "hash": "e094c7ae7129ad22836212d273caebdb",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 43,
+                "endOffset": 53
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Revoke and change this password, as it is compromised.",
+            "effort": "1h",
+            "debt": "1h",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "243c4d40-ea89-4888-8066-6c987047a28b",
+            "rule": "python:S8392",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/Z-A01-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 29,
+            "hash": "4a21812a2b7eb96eabdb467ea7ca25a7",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 4,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid binding the application to all network interfaces.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "fastapi",
+                "least-privilege",
+                "uvicorn",
+                "flask",
+                "deployment",
+                "network"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "fce229d6-5488-43b3-82d6-5f56b548fbb0",
+            "rule": "python:S6437",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/Z-A07-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 9,
+            "hash": "3de9f59df8d44150fc9613c464c43f8b",
+            "textRange": {
+                "startLine": 9,
+                "endLine": 9,
+                "startOffset": 43,
+                "endOffset": 56
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Revoke and change this password, as it is compromised.",
+            "effort": "1h",
+            "debt": "1h",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "a9ab764a-fe93-4ce4-b2d6-0d08467d04c9",
+            "rule": "python:S8392",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/Z-A07-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 46,
+            "hash": "4a21812a2b7eb96eabdb467ea7ca25a7",
+            "textRange": {
+                "startLine": 46,
+                "endLine": 46,
+                "startOffset": 4,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid binding the application to all network interfaces.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "fastapi",
+                "least-privilege",
+                "uvicorn",
+                "flask",
+                "deployment",
+                "network"
+            ],
+            "creationDate": "2026-06-05T15:05:22-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "01380a16-a69d-4e1c-acf1-33d317505109",
+            "rule": "python:S6353",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 40,
+            "hash": "b7bdbee5713c10ac188dcbee093f9836",
+            "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 26,
+                "endOffset": 38
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use concise character class syntax '\\w' instead of '[a-zA-Z0-9_]'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "regex"
+            ],
+            "creationDate": "2026-06-03T18:14:20-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "a018f155-b68b-414f-8c94-dd631c00e28a",
+            "rule": "python:S6353",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 59,
+            "hash": "513b9249375ee7eed12fc7f05b8d8126",
+            "textRange": {
+                "startLine": 59,
+                "endLine": 59,
+                "startOffset": 26,
+                "endOffset": 31
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "regex"
+            ],
+            "creationDate": "2026-06-03T18:14:20-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "3c494ae9-af69-4a90-b4fe-e42dc3f654f5",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 148,
+            "hash": "5e11fcffc5ca1f600d0bf53d38f19ae7",
+            "textRange": {
+                "startLine": 148,
+                "endLine": 148,
+                "startOffset": 24,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"e\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2026-06-03T18:14:20-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "fa1917c3-7afd-4610-b818-2a2536c4747f",
+            "rule": "python:S6353",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/Z-A04-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 37,
+            "hash": "3665363e84fc11ba088ce4afb216d646",
+            "textRange": {
+                "startLine": 37,
+                "endLine": 37,
+                "startOffset": 27,
+                "endOffset": 39
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use concise character class syntax '\\w' instead of '[a-zA-Z0-9_]'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "regex"
+            ],
+            "creationDate": "2026-06-03T18:14:20-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "fc060dab-0442-4a9a-aa6a-e1b73987888c",
+            "rule": "python:S6353",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/Z-A04-EN-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 56,
+            "hash": "c2b5e8a3f39ce78942cb3308c832fbc0",
+            "textRange": {
+                "startLine": 56,
+                "endLine": 56,
+                "startOffset": 27,
+                "endOffset": 32
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use concise character class syntax '\\d' instead of '[0-9]'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "regex"
+            ],
+            "creationDate": "2026-06-03T18:14:20-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "c924fbb3-84ce-481d-9225-47b4cf90c991",
+            "rule": "python:S6353",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/D-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 16,
+            "hash": "24dd1c01cb1559868d1118dd378b03ac",
+            "textRange": {
+                "startLine": 16,
+                "endLine": 16,
+                "startOffset": 28,
+                "endOffset": 40
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use concise character class syntax '\\w' instead of '[a-zA-Z0-9_]'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "regex"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "be4f37c9-f495-4362-ac40-9d3d4091fe61",
+            "rule": "python:S5713",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/D-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 123,
+            "hash": "1979ad3eb30f75ddccee830247e47646",
+            "textRange": {
+                "startLine": 123,
+                "endLine": 123,
+                "startOffset": 24,
+                "endOffset": 38
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 123,
+                                "endLine": 123,
+                                "startOffset": 12,
+                                "endOffset": 22
+                            },
+                            "msg": "Parent class.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Remove this redundant Exception class; it derives from another which is already caught.",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "error-handling",
+                "bad-practice",
+                "unused"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "40c7fbf7-c58e-4fa3-9bd6-f48e518b62f7",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/D-A10-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 34,
+            "hash": "a0f79eccfd47d2edca5e112aedd4ceac",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 51,
+                "endOffset": 62
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 39,
+                                "endLine": 39,
+                                "startOffset": 49,
+                                "endOffset": 60
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 41,
+                                "endLine": 41,
+                                "startOffset": 44,
+                                "endOffset": 55
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"<unknown>\" 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "4b996e97-6cc3-4a0c-92fd-00844abf230e",
+            "rule": "python:S6353",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 17,
+            "hash": "24dd1c01cb1559868d1118dd378b03ac",
+            "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 28,
+                "endOffset": 40
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use concise character class syntax '\\w' instead of '[a-zA-Z0-9_]'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "regex"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "0c167fe8-b178-4350-b1cc-335a0ff50473",
+            "rule": "python:S3776",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 118,
+            "hash": "242586995ec9a85fa3ce84b6c91de111",
+            "textRange": {
+                "startLine": 118,
+                "endLine": 118,
+                "startOffset": 4,
+                "endOffset": 25
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 121,
+                                "endLine": 121,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 121,
+                                "endLine": 121,
+                                "startOffset": 37,
+                                "endOffset": 39
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 123,
+                                "endLine": 123,
+                                "startOffset": 4,
+                                "endOffset": 8
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 125,
+                                "endLine": 125,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 133,
+                                "endLine": 133,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 133,
+                                "endLine": 133,
+                                "startOffset": 34,
+                                "endOffset": 36
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 135,
+                                "endLine": 135,
+                                "startOffset": 4,
+                                "endOffset": 8
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 137,
+                                "endLine": 137,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 137,
+                                "endLine": 137,
+                                "startOffset": 24,
+                                "endOffset": 26
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 140,
+                                "endLine": 140,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 140,
+                                "endLine": 140,
+                                "startOffset": 37,
+                                "endOffset": 39
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 142,
+                                "endLine": 142,
+                                "startOffset": 4,
+                                "endOffset": 8
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 143,
+                                "endLine": 143,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 145,
+                                "endLine": 145,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "afb5e23a-7b19-4822-915b-5ac748b93832",
+            "rule": "python:S5886",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 159,
+            "hash": "a3f037b7c5ebe6565a03965c970df30f",
+            "textRange": {
+                "startLine": 159,
+                "endLine": 159,
+                "startOffset": 4,
+                "endOffset": 35
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 155,
+                                "endLine": 155,
+                                "startOffset": 4,
+                                "endOffset": 14
+                            },
+                            "msg": "Function definition.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 155,
+                                "endLine": 155,
+                                "startOffset": 93,
+                                "endOffset": 101
+                            },
+                            "msg": "Type hint.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Return a value of type \"Response\" instead of \"tuple\" or update function \"json_error\" type hint.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "typing"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "022a7c90-fd53-408b-847a-5cdf9093f9df",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 257,
+            "hash": "b5f56e2b985d6a77f22a44ea151c214a",
+            "textRange": {
+                "startLine": 257,
+                "endLine": 257,
+                "startOffset": 90,
+                "endOffset": 103
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 272,
+                                "endLine": 272,
+                                "startOffset": 94,
+                                "endOffset": 107
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 279,
+                                "endLine": 279,
+                                "startOffset": 94,
+                                "endOffset": 107
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"{{ error }}\" 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "85de23ad-6282-47b5-9745-c38e957ba6e8",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 257,
+            "hash": "b5f56e2b985d6a77f22a44ea151c214a",
+            "textRange": {
+                "startLine": 257,
+                "endLine": 257,
+                "startOffset": 63,
+                "endOffset": 76
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 272,
+                                "endLine": 272,
+                                "startOffset": 67,
+                                "endOffset": 80
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 279,
+                                "endLine": 279,
+                                "startOffset": 67,
+                                "endOffset": 80
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"{% endif %}\" 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "dd54480b-7c23-47fb-ab65-9de05fa0269b",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 257,
+            "hash": "b5f56e2b985d6a77f22a44ea151c214a",
+            "textRange": {
+                "startLine": 257,
+                "endLine": 257,
+                "startOffset": 33,
+                "endOffset": 49
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 272,
+                                "endLine": 272,
+                                "startOffset": 37,
+                                "endOffset": 53
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 279,
+                                "endLine": 279,
+                                "startOffset": 37,
+                                "endOffset": 53
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"{% if error %}\" 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "a2eee329-82e5-4e47-90a8-fdc96132a035",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 258,
+            "hash": "931bd74e2646fd7863295c8e3c902299",
+            "textRange": {
+                "startLine": 258,
+                "endLine": 258,
+                "startOffset": 35,
+                "endOffset": 46
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 273,
+                                "endLine": 273,
+                                "startOffset": 51,
+                                "endOffset": 62
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 280,
+                                "endLine": 280,
+                                "startOffset": 51,
+                                "endOffset": 62
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 285,
+                                "endLine": 285,
+                                "startOffset": 43,
+                                "endOffset": 54
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"text/html\" 4 times.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "a0a92c98-8812-4730-b9e0-3f3c309cc9af",
+            "rule": "python:S5886",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 283,
+            "hash": "e75a5a18cf1d9d0be51597b45a0ee0cb",
+            "textRange": {
+                "startLine": 283,
+                "endLine": 283,
+                "startOffset": 8,
+                "endOffset": 72
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 262,
+                                "endLine": 262,
+                                "startOffset": 4,
+                                "endOffset": 19
+                            },
+                            "msg": "Function definition.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 262,
+                                "endLine": 262,
+                                "startOffset": 25,
+                                "endOffset": 33
+                            },
+                            "msg": "Type hint.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Return a value of type \"Response\" instead of \"tuple\" or update function \"register_submit\" type hint.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "typing"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "8cab8f29-d2e7-496b-838e-b267e26a2525",
+            "rule": "python:S5886",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 303,
+            "hash": "e75a5a18cf1d9d0be51597b45a0ee0cb",
+            "textRange": {
+                "startLine": 303,
+                "endLine": 303,
+                "startOffset": 4,
+                "endOffset": 68
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 289,
+                                "endLine": 289,
+                                "startOffset": 4,
+                                "endOffset": 16
+                            },
+                            "msg": "Function definition.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 289,
+                                "endLine": 289,
+                                "startOffset": 22,
+                                "endOffset": 30
+                            },
+                            "msg": "Type hint.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Return a value of type \"Response\" instead of \"tuple\" or update function \"api_register\" type hint.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "typing"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "4dc22ea2-7f3c-4dc6-8611-37508cadb218",
+            "rule": "python:S6353",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/Z-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 20,
+            "hash": "24dd1c01cb1559868d1118dd378b03ac",
+            "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 28,
+                "endOffset": 40
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use concise character class syntax '\\w' instead of '[a-zA-Z0-9_]'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "regex"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "ff96f76b-067a-483d-b33b-737e897c0b9d",
+            "rule": "python:S8409",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/Z-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 121,
+            "hash": "60318d075c680b809ec637204195ae8d",
+            "textRange": {
+                "startLine": 121,
+                "endLine": 121,
+                "startOffset": 23,
+                "endOffset": 50
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this redundant \"response_model\" parameter; it duplicates the return type annotation.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "fastapi",
+                "api",
+                "redundant"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "329ac7e2-1282-4195-b80f-a6ab282e261e",
+            "rule": "python:S8410",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/Z-A04-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 122,
+            "hash": "aeecf4c83a7b57addb1ecff410c8f7ce",
+            "textRange": {
+                "startLine": 122,
+                "endLine": 122,
+                "startOffset": 39,
+                "endOffset": 68
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use \"Annotated\" type hints for FastAPI dependency injection",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "convention",
+                "fastapi",
+                "type-hint"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "424619a5-f0dd-4121-b4c6-3992b46f2a98",
+            "rule": "python:S3776",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 30,
+            "hash": "47f3de9af82a33143787e17eca8c1ff4",
+            "textRange": {
+                "startLine": 30,
+                "endLine": 30,
+                "startOffset": 4,
+                "endOffset": 8
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 43,
+                                "endLine": 43,
+                                "startOffset": 4,
+                                "endOffset": 10
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 44,
+                                "endLine": 44,
+                                "startOffset": 58,
+                                "endOffset": 60
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 46,
+                                "endLine": 46,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 49,
+                                "endLine": 49,
+                                "startOffset": 4,
+                                "endOffset": 10
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 52,
+                                "endLine": 52,
+                                "startOffset": 4,
+                                "endOffset": 10
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 55,
+                                "endLine": 55,
+                                "startOffset": 4,
+                                "endOffset": 10
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 61,
+                                "endLine": 61,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 61,
+                                "endLine": 61,
+                                "startOffset": 30,
+                                "endOffset": 33
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 62,
+                                "endLine": 62,
+                                "startOffset": 37,
+                                "endOffset": 39
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 66,
+                                "endLine": 66,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 68,
+                                "endLine": 68,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 70,
+                                "endLine": 70,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 72,
+                                "endLine": 72,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+                            "textRange": {
+                                "startLine": 74,
+                                "endLine": 74,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this function to reduce its Cognitive Complexity from 25 to the 15 allowed.",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2026-06-03T17:57:50-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "37ace529-1878-4147-abc3-859f114e33d9",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/D-A04-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 134,
+            "hash": "8b5cb05165ee20388dd409b51251d631",
+            "textRange": {
+                "startLine": 134,
+                "endLine": 134,
+                "startOffset": 21,
+                "endOffset": 36
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the unused local variable \"stored_username\" with \"_\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2026-06-03T17:20:06-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "a0cfa75b-f0fc-46c3-88e6-4b3004fed473",
+            "rule": "python:S7500",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 23,
+            "hash": "066a3e40e171b0e4d82c6972ddf641ef",
+            "textRange": {
+                "startLine": 23,
+                "endLine": 23,
+                "startOffset": 15,
+                "endOffset": 57
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this comprehension with passing the iterable to the dict constructor call",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [],
+            "creationDate": "2026-06-03T17:20:06-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "c8921260-c8cd-436d-b789-15f2b9930091",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 105,
+            "hash": "5e11fcffc5ca1f600d0bf53d38f19ae7",
+            "textRange": {
+                "startLine": 105,
+                "endLine": 105,
+                "startOffset": 24,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"e\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2026-06-03T17:20:06-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "1bc4d747-ce4b-45cd-8ac2-705872b44a05",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 127,
+            "hash": "5e11fcffc5ca1f600d0bf53d38f19ae7",
+            "textRange": {
+                "startLine": 127,
+                "endLine": 127,
+                "startOffset": 24,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"e\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2026-06-03T17:20:06-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "b2384bad-3ab0-4e42-a6f1-71e791e86b0e",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 156,
+            "hash": "5e11fcffc5ca1f600d0bf53d38f19ae7",
+            "textRange": {
+                "startLine": 156,
+                "endLine": 156,
+                "startOffset": 24,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"e\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2026-06-03T17:20:06-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "30c8b23e-c14f-4097-b1e3-d51fd432c0c1",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/Z-A04-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 67,
+            "hash": "5e11fcffc5ca1f600d0bf53d38f19ae7",
+            "textRange": {
+                "startLine": 67,
+                "endLine": 67,
+                "startOffset": 24,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"e\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2026-06-03T17:20:06-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "5bd6568d-a8f5-4bcf-86a9-1d11a5c27f4c",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/Z-A04-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 96,
+            "hash": "258ee890d4abdfdfd9ac7925892911cd",
+            "textRange": {
+                "startLine": 96,
+                "endLine": 96,
+                "startOffset": 33,
+                "endOffset": 57
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A04-PT-PY-C4.py",
+                            "textRange": {
+                                "startLine": 105,
+                                "endLine": 105,
+                                "startOffset": 33,
+                                "endOffset": 57
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/Z-A04-PT-PY-C4.py",
+                            "textRange": {
+                                "startLine": 144,
+                                "endLine": 144,
+                                "startOffset": 33,
+                                "endOffset": 57
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal 'Usuário não encontrado' 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2026-06-03T17:20:06-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "114e8a52-0812-41e2-92fb-4395c9fda6a5",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/Z-A04-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 135,
+            "hash": "5e11fcffc5ca1f600d0bf53d38f19ae7",
+            "textRange": {
+                "startLine": 135,
+                "endLine": 135,
+                "startOffset": 24,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"e\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2026-06-03T17:20:06-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "e30ddb16-c1fc-41cc-98cb-f34c9db01d48",
+            "rule": "python:S1481",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/Z-A04-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 150,
+            "hash": "5e11fcffc5ca1f600d0bf53d38f19ae7",
+            "textRange": {
+                "startLine": 150,
+                "endLine": 150,
+                "startOffset": 24,
+                "endOffset": 25
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the unused local variable \"e\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2026-06-03T17:20:06-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "141f4ef0-8d42-4123-9ec3-f56cb645ed7d",
+            "rule": "python:S8392",
+            "severity": "BLOCKER",
+            "component": "SnippetsPY:SnippetsPY/Z-A04-PT-PY-C4.py",
+            "project": "SnippetsPY",
+            "line": 157,
+            "hash": "4a21812a2b7eb96eabdb467ea7ca25a7",
+            "textRange": {
+                "startLine": 157,
+                "endLine": 157,
+                "startOffset": 4,
+                "endOffset": 11
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Avoid binding the application to all network interfaces.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "fastapi",
+                "least-privilege",
+                "uvicorn",
+                "flask",
+                "deployment",
+                "network"
+            ],
+            "creationDate": "2026-06-03T17:20:06-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "BLOCKER"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "3ebb0ebb-fed6-42ce-8542-b30f715b082a",
+            "rule": "python:S6353",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/D-A04-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 16,
+            "hash": "cee02a52df96d305c55d016f1b3ad349",
+            "textRange": {
+                "startLine": 16,
+                "endLine": 16,
+                "startOffset": 28,
+                "endOffset": 40
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use concise character class syntax '\\w' instead of '[A-Za-z0-9_]'.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "regex"
+            ],
+            "creationDate": "2026-06-02T20:12:14-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CLEAR",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "9cf6f436-a2d6-4f6f-81c7-5637aea00015",
+            "rule": "python:S3776",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 93,
+            "hash": "81838d854bda63daf24c618c129109db",
+            "textRange": {
+                "startLine": 93,
+                "endLine": 93,
+                "startOffset": 4,
+                "endOffset": 22
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 98,
+                                "endLine": 98,
+                                "startOffset": 44,
+                                "endOffset": 46
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 104,
+                                "endLine": 104,
+                                "startOffset": 40,
+                                "endOffset": 42
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 105,
+                                "endLine": 105,
+                                "startOffset": 31,
+                                "endOffset": 33
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 106,
+                                "endLine": 106,
+                                "startOffset": 44,
+                                "endOffset": 46
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 107,
+                                "endLine": 107,
+                                "startOffset": 44,
+                                "endOffset": 46
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 108,
+                                "endLine": 108,
+                                "startOffset": 55,
+                                "endOffset": 57
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 110,
+                                "endLine": 110,
+                                "startOffset": 42,
+                                "endOffset": 44
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 111,
+                                "endLine": 111,
+                                "startOffset": 32,
+                                "endOffset": 34
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 112,
+                                "endLine": 112,
+                                "startOffset": 42,
+                                "endOffset": 44
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 113,
+                                "endLine": 113,
+                                "startOffset": 52,
+                                "endOffset": 54
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 117,
+                                "endLine": 117,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 117,
+                                "endLine": 117,
+                                "startOffset": 23,
+                                "endOffset": 26
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 121,
+                                "endLine": 121,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 124,
+                                "endLine": 124,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 126,
+                                "endLine": 126,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 128,
+                                "endLine": 128,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 130,
+                                "endLine": 130,
+                                "startOffset": 50,
+                                "endOffset": 52
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 132,
+                                "endLine": 132,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 132,
+                                "endLine": 132,
+                                "startOffset": 24,
+                                "endOffset": 27
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 135,
+                                "endLine": 135,
+                                "startOffset": 8,
+                                "endOffset": 11
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 136,
+                                "endLine": 136,
+                                "startOffset": 12,
+                                "endOffset": 14
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 136,
+                                "endLine": 136,
+                                "startOffset": 31,
+                                "endOffset": 33
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 138,
+                                "endLine": 138,
+                                "startOffset": 32,
+                                "endOffset": 34
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 138,
+                                "endLine": 138,
+                                "startOffset": 50,
+                                "endOffset": 53
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 139,
+                                "endLine": 139,
+                                "startOffset": 44,
+                                "endOffset": 46
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 143,
+                                "endLine": 143,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 143,
+                                "endLine": 143,
+                                "startOffset": 14,
+                                "endOffset": 17
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 144,
+                                "endLine": 144,
+                                "startOffset": 48,
+                                "endOffset": 50
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 146,
+                                "endLine": 146,
+                                "startOffset": 32,
+                                "endOffset": 34
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 147,
+                                "endLine": 147,
+                                "startOffset": 30,
+                                "endOffset": 32
+                            },
+                            "msg": "+3 (incl 2 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 151,
+                                "endLine": 151,
+                                "startOffset": 114,
+                                "endOffset": 116
+                            },
+                            "msg": "+2 (incl 1 for nesting)",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 153,
+                                "endLine": 153,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this function to reduce its Cognitive Complexity from 49 to the 15 allowed.",
+            "effort": "39min",
+            "debt": "39min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "brain-overload"
+            ],
+            "creationDate": "2026-06-02T20:12:14-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FOCUSED",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "b11f9d47-2b86-4609-8122-d244cf3d4cae",
+            "rule": "python:S1192",
+            "severity": "CRITICAL",
+            "component": "SnippetsPY:SnippetsPY/F-A04-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 85,
+            "hash": "26bd73743019bb476564d19b50529ec1",
+            "textRange": {
+                "startLine": 85,
+                "endLine": 85,
+                "startOffset": 29,
+                "endOffset": 49
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 92,
+                                "endLine": 92,
+                                "startOffset": 26,
+                                "endOffset": 46
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "SnippetsPY:SnippetsPY/F-A04-PT-PY-G5.py",
+                            "textRange": {
+                                "startLine": 99,
+                                "endLine": 99,
+                                "startOffset": 29,
+                                "endOffset": 49
+                            },
+                            "msg": "Duplication",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Define a constant instead of duplicating this literal \"Campo obrigatório.\" 3 times.",
+            "effort": "6min",
+            "debt": "6min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "design"
+            ],
+            "creationDate": "2026-06-02T20:12:14-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "DISTINCT",
+            "cleanCodeAttributeCategory": "ADAPTABLE",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "HIGH"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "db8c68e2-328e-498a-9812-9212cc3a35b7",
+            "rule": "python:S2068",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 99,
+            "hash": "7a104bd118d6267465189907179d0562",
+            "textRange": {
+                "startLine": 99,
+                "endLine": 99,
+                "startOffset": 8,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\"password\" detected here, review this potentially hard-coded credential.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-02T20:12:14-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "84d44b49-d58e-434d-8e94-2c42d44dfd05",
+            "rule": "python:S2068",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 101,
+            "hash": "157b043c5b6618b3f972fdf2bb31040a",
+            "textRange": {
+                "startLine": 101,
+                "endLine": 101,
+                "startOffset": 8,
+                "endOffset": 63
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\"password\" detected here, review this potentially hard-coded credential.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-02T20:12:14-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "f854384a-ef7a-4535-9995-c29db08f7ef9",
+            "rule": "python:S2068",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 103,
+            "hash": "8f81111d7ee413ba06f46c9f869016f3",
+            "textRange": {
+                "startLine": 103,
+                "endLine": 103,
+                "startOffset": 8,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\"password\" detected here, review this potentially hard-coded credential.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-02T20:12:14-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "5d0522dc-d82e-40db-9a2d-6ddb1364117b",
+            "rule": "python:S2068",
+            "severity": "MAJOR",
+            "component": "SnippetsPY:SnippetsPY/F-A04-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 215,
+            "hash": "2520e5dd0f5f41439fdc10de062064f3",
+            "textRange": {
+                "startLine": 215,
+                "endLine": 215,
+                "startOffset": 103,
+                "endOffset": 128
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "\"password\" detected here, review this potentially hard-coded credential.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2026-06-02T20:12:14-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "VULNERABILITY",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        },
+        {
+            "key": "e6420930-3864-457c-b446-5d3bc14e6269",
+            "rule": "python:S7500",
+            "severity": "MINOR",
+            "component": "SnippetsPY:SnippetsPY/F-A10-PT-PY-G5.py",
+            "project": "SnippetsPY",
+            "line": 44,
+            "hash": "5653ebe0223f48653ea3c70b5932920e",
+            "textRange": {
+                "startLine": 44,
+                "endLine": 44,
+                "startOffset": 31,
+                "endOffset": 70
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this comprehension with passing the iterable to the dict constructor call",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "211030676@aluno.unb.br",
+            "tags": [],
+            "creationDate": "2026-06-02T20:12:14-0300",
+            "updateDate": "2026-06-06T17:30:49-0300",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false,
+            "fromSonarQubeUpdate": false,
+            "internalTags": [],
+            "linkedTicketStatus": "NOT_LINKED"
+        }
+    ],
+    "components": [
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A04-PT-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A04-PT-PY-G5.py",
+            "longName": "SnippetsPY/D-A04-PT-PY-G5.py",
+            "path": "SnippetsPY/D-A04-PT-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/F-A04-PT-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "F-A04-PT-PY-G5.py",
+            "longName": "SnippetsPY/F-A04-PT-PY-G5.py",
+            "path": "SnippetsPY/F-A04-PT-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A04-EN-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A04-EN-PY-G5.py",
+            "longName": "SnippetsPY/D-A04-EN-PY-G5.py",
+            "path": "SnippetsPY/D-A04-EN-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A01-EN-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A01-EN-PY-C4.py",
+            "longName": "SnippetsPY/D-A01-EN-PY-C4.py",
+            "path": "SnippetsPY/D-A01-EN-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/Z-A01-EN-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Z-A01-EN-PY-C4.py",
+            "longName": "SnippetsPY/Z-A01-EN-PY-C4.py",
+            "path": "SnippetsPY/Z-A01-EN-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A07-PT-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A07-PT-PY-G5.py",
+            "longName": "SnippetsPY/D-A07-PT-PY-G5.py",
+            "path": "SnippetsPY/D-A07-PT-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/F-A07-PT-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "F-A07-PT-PY-C4.py",
+            "longName": "SnippetsPY/F-A07-PT-PY-C4.py",
+            "path": "SnippetsPY/F-A07-PT-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/Z-A07-PT-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Z-A07-PT-PY-C4.py",
+            "longName": "SnippetsPY/Z-A07-PT-PY-C4.py",
+            "path": "SnippetsPY/Z-A07-PT-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/F-A04-PT-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "F-A04-PT-PY-C4.py",
+            "longName": "SnippetsPY/F-A04-PT-PY-C4.py",
+            "path": "SnippetsPY/F-A04-PT-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A07-EN-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A07-EN-PY-C4.py",
+            "longName": "SnippetsPY/D-A07-EN-PY-C4.py",
+            "path": "SnippetsPY/D-A07-EN-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A10-PT-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A10-PT-PY-C4.py",
+            "longName": "SnippetsPY/D-A10-PT-PY-C4.py",
+            "path": "SnippetsPY/D-A10-PT-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/F-A07-EN-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "F-A07-EN-PY-G5.py",
+            "longName": "SnippetsPY/F-A07-EN-PY-G5.py",
+            "path": "SnippetsPY/F-A07-EN-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/F-A04-EN-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "F-A04-EN-PY-C4.py",
+            "longName": "SnippetsPY/F-A04-EN-PY-C4.py",
+            "path": "SnippetsPY/F-A04-EN-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/Z-A07-EN-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Z-A07-EN-PY-G5.py",
+            "longName": "SnippetsPY/Z-A07-EN-PY-G5.py",
+            "path": "SnippetsPY/Z-A07-EN-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/Z-A07-EN-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Z-A07-EN-PY-C4.py",
+            "longName": "SnippetsPY/Z-A07-EN-PY-C4.py",
+            "path": "SnippetsPY/Z-A07-EN-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A10-PT-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A10-PT-PY-G5.py",
+            "longName": "SnippetsPY/D-A10-PT-PY-G5.py",
+            "path": "SnippetsPY/D-A10-PT-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A07-PT-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A07-PT-PY-C4.py",
+            "longName": "SnippetsPY/D-A07-PT-PY-C4.py",
+            "path": "SnippetsPY/D-A07-PT-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/Z-A04-EN-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Z-A04-EN-PY-G5.py",
+            "longName": "SnippetsPY/Z-A04-EN-PY-G5.py",
+            "path": "SnippetsPY/Z-A04-EN-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/Z-A01-EN-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Z-A01-EN-PY-G5.py",
+            "longName": "SnippetsPY/Z-A01-EN-PY-G5.py",
+            "path": "SnippetsPY/Z-A01-EN-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/Z-A10-EN-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Z-A10-EN-PY-G5.py",
+            "longName": "SnippetsPY/Z-A10-EN-PY-G5.py",
+            "path": "SnippetsPY/Z-A10-EN-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A04-PT-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A04-PT-PY-C4.py",
+            "longName": "SnippetsPY/D-A04-PT-PY-C4.py",
+            "path": "SnippetsPY/D-A04-PT-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "SnippetsPY",
+            "longName": "SnippetsPY"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/F-A07-EN-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "F-A07-EN-PY-C4.py",
+            "longName": "SnippetsPY/F-A07-EN-PY-C4.py",
+            "path": "SnippetsPY/F-A07-EN-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A10-EN-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A10-EN-PY-G5.py",
+            "longName": "SnippetsPY/D-A10-EN-PY-G5.py",
+            "path": "SnippetsPY/D-A10-EN-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/F-A10-PT-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "F-A10-PT-PY-G5.py",
+            "longName": "SnippetsPY/F-A10-PT-PY-G5.py",
+            "path": "SnippetsPY/F-A10-PT-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/F-A04-EN-PY-G5.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "F-A04-EN-PY-G5.py",
+            "longName": "SnippetsPY/F-A04-EN-PY-G5.py",
+            "path": "SnippetsPY/F-A04-EN-PY-G5.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/Z-A04-PT-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Z-A04-PT-PY-C4.py",
+            "longName": "SnippetsPY/Z-A04-PT-PY-C4.py",
+            "path": "SnippetsPY/Z-A04-PT-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/F-A01-PT-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "F-A01-PT-PY-C4.py",
+            "longName": "SnippetsPY/F-A01-PT-PY-C4.py",
+            "path": "SnippetsPY/F-A01-PT-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/Z-A01-PT-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Z-A01-PT-PY-C4.py",
+            "longName": "SnippetsPY/Z-A01-PT-PY-C4.py",
+            "path": "SnippetsPY/Z-A01-PT-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/D-A01-PT-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "D-A01-PT-PY-C4.py",
+            "longName": "SnippetsPY/D-A01-PT-PY-C4.py",
+            "path": "SnippetsPY/D-A01-PT-PY-C4.py"
+        },
+        {
+            "key": "SnippetsPY:SnippetsPY/Z-A04-EN-PY-C4.py",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Z-A04-EN-PY-C4.py",
+            "longName": "SnippetsPY/Z-A04-EN-PY-C4.py",
+            "path": "SnippetsPY/Z-A04-EN-PY-C4.py"
+        }
+    ],
+    "facets": []
+}
