@@ -1,3 +1,5 @@
+[TOC]
+
 # Prompts
 
 ## Modes
