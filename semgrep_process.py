@@ -9,12 +9,6 @@ load_dotenv()
 
 SEMGREP_JSON_PATH = os.getenv("SEMGREP_JSON_PATH")
 
-SEVERITY_WEIGHTS = {
-    "ERROR": 3,
-    "WARNING": 2,
-    "INFO": 1
-}
-
 def save_to_db(df, table_name):
     if df.empty:
         return
