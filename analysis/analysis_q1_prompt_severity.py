@@ -1,5 +1,6 @@
 import pandas as pd
 from db import get_engine
+import matplotlib.pyplot as plt
 
 def prompt_severity_analysis():
     engine = get_engine()
@@ -60,21 +61,58 @@ def prompt_severity_analysis():
                      (df_severidade['Médio'] * 2) + \
                      (df_severidade['Baixo'] * 1)
                      
-    df_severidade['Severidade Média'] = (pontuaca_total / df_severidade['Total Ocorrências']).round(2)
+    df_severidade['Severidade Média'] = (pontuaca_total / 40).round(2)
     
-    # 4. Gera a tabela percentual apenas das colunas de severidade (para não incluir o Total e a Média no % )
     colunas_sev = ['Alto', 'Médio', 'Baixo']
     df_sev_pct = df_severidade[colunas_sev].div(df_severidade['Total Ocorrências'], axis=0) * 100
     df_sev_pct = df_sev_pct.round(1)
     
-    # Exibição dos resultados
-    # Pesos utilizados: Alto=3, Médio=2, Baixo=1
-    # Severidade média mais perto de 3 indica um perfil mais crítico, enquanto mais perto de 1 indica um perfil mais leve.
     print("\nTabela Consolidada de Severidade:")
     print(df_severidade)
     
     print("\nDistribuição percentual (%) da severidade dentro de cada prompt:")
     print(df_sev_pct)
+
+    # ------ GRÁFICOS ------
+    
+    df_tvp = df_tvp.sort_values(by='Total Vulnerabilidades (Vi)', ascending=True)
+
+    bars = plt.bar(
+        df_tvp['Tipo de Prompt'],
+        df_tvp['Total Vulnerabilidades (Vi)'],
+        color=['#4C72B0', '#55A868', '#C44E52'],
+    )
+
+    plt.bar_label(bars, padding=3)
+
+    plt.title('Total de Vulnerabilidades por Tipo de Prompt')
+    plt.xlabel('Tipo de Prompt')
+    plt.ylabel('Total Vulnerabilidades')
+
+    plt.tight_layout()
+
+    plt.savefig('vulnerabilidades_prompt.png')
+
+    if 'prompt_type' in df_severidade.columns:
+        df_filtrado = df_severidade[['prompt_type', 'Alto', 'Médio', 'Baixo']].set_index('prompt_type')
+    else:
+        df_filtrado = df_severidade[['Alto', 'Médio', 'Baixo']]
+
+    df_filtrado['Total'] = df_filtrado.sum(axis=1)
+    df_filtrado = df_filtrado.sort_values(by='Total', ascending=True) # Deixa a maior barra no topo
+    df_filtrado = df_filtrado.drop(columns=['Total'])
+
+    cores = ['#D32F2F', '#F57C00', '#FBC02D'] # Vermelho, Laranja e Amarelo
+
+    ax = df_filtrado.plot(kind='barh', stacked=True, color=cores, width=0.6)
+
+    plt.title('Severidade das Vulnerabilidades por Tipo de Prompt')
+    plt.xlabel('Total de Vulnerabilidades')
+    plt.ylabel('Tipo de Prompt')
+    plt.legend(title='Severidade')
+    plt.tight_layout()
+    plt.savefig('vulnerabilidades_severidade_horizontal.png')
+
 
 if __name__ == "__main__":
     prompt_severity_analysis()

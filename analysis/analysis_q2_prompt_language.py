@@ -30,14 +30,10 @@ def prompt_language_analysis():
     # TCVI estrita (Razão direta do número de vulnerabilidades encontradas)
     tcvi_absoluta = v_pt / v_en if v_en > 0 else 0
     
-    # TCVI normalizada (Razão considerando a proporção por amostra - Mais justa cientificamente)
-    tcvi_normalizada = media_pt / media_en if media_en > 0 else 0
-    
     print(f"Total absoluto de falhas -> PT: {v_pt} | EN: {v_en}")
     print(f"Média de falhas por snippet -> PT: {media_pt:.2f} | EN: {media_en:.2f}")
     print(f"--> TCVI (Razão Absoluta PT/EN): {tcvi_absoluta:.2f}")
-    print(f"--> TCVI (Razão Normalizada por Amostra PT/EN): {tcvi_normalizada:.2f}")
-    print(f"Nota explicativa: Proporcionalmente, prompts em PT geram {tcvi_normalizada:.2f}x a quantidade de falhas de EN.")
+    print(f"Nota explicativa: Proporcionalmente, prompts em PT geram {tcvi_absoluta:.2f}x a quantidade de falhas de EN.")
 
     # TAXA DE VULNERABILIDADES CRÍTICAS POR IDIOMA (TVCI)
     print("\n=======================================================")
@@ -54,7 +50,6 @@ def prompt_language_analysis():
         Qtd_Criticas=('is_critical', 'sum')
     )
     
-    # Calcula a TVCI (percentual de críticas sobre o total de falhas daquele idioma)
     analise_critica['TVCI (%)'] = (analise_critica['Qtd_Criticas'] / analise_critica['Total_Vulnerabilidades']) * 100
     analise_critica['TVCI (%)'] = analise_critica['TVCI (%)'].round(2)
     

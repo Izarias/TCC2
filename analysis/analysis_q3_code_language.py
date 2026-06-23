@@ -1,5 +1,7 @@
 import pandas as pd
 from db import get_engine
+import matplotlib.pyplot as plt
+import numpy as np
 
 def code_language_analysis():
     engine = get_engine()
@@ -14,19 +16,16 @@ def code_language_analysis():
     df_exploded = df.explode('cwe_list').reset_index(drop=True)
     df_exploded['cwe_list'] = df_exploded['cwe_list'].str.strip()
 
-    # DENSIDADE DE VULNERABILIDADES REAL & SEVERIDADE PONDERADA
     print("\n=======================================================")
     print("1. DENSIDADE E SEVERIDADE DE VULNERABILIDADES POR LINGUAGEM")
     print("=======================================================")
     
-    # Cria a tabela cruzada original de Linguagem vs Severidade
     df_orig_lang = pd.crosstab(df['code_language'], df['severity'])
     
     for col in ['Alto', 'Médio', 'Baixo']:
         if col not in df_orig_lang.columns:
             df_orig_lang[col] = 0
 
-    # Consolida nos 3 níveis de peso definidos na metodologia (IGUAL Q1 e Q2)
     df_lang_sev = pd.DataFrame(index=df_orig_lang.index)
     df_lang_sev['Alto'] = df_orig_lang['Alto']
     df_lang_sev['Médio'] = df_orig_lang['Médio']
@@ -38,28 +37,51 @@ def code_language_analysis():
         "C#": 60 
     }
     
-    # Mapeia as amostras e calcula a Densidade Real (Falhas Reais / Total Amostras)
     df_lang_sev['Total Amostras (Ni)'] = df_lang_sev.index.map(N_lang).fillna(1)
     df_lang_sev['Densidade (Falhas/Snippet)'] = (df_lang_sev['Total Falhas Real'] / df_lang_sev['Total Amostras (Ni)']).round(2)
 
-    # Calcula a Severidade Média Ponderada da Linguagem
+    # Calcula a Severidade Média Ponderada
     pontuacao_lang = (df_lang_sev['Alto'] * 3) + \
                      (df_lang_sev['Médio'] * 2) + \
                      (df_lang_sev['Baixo'] * 1)
-    df_lang_sev['Severidade Média'] = (pontuacao_lang / df_lang_sev['Total Falhas Real']).round(2)
+    df_lang_sev['Severidade Média'] = (pontuacao_lang / df_lang_sev['Total Amostras (Ni)']).round(2)
 
     print("\nTabela de Densidade e Severidade por Linguagem (Base Real):")
     print(df_lang_sev[['Alto', 'Médio', 'Baixo', 'Total Falhas Real', 'Densidade (Falhas/Snippet)', 'Severidade Média']])
 
+    x = np.arange(len(df_lang_sev.index))
+    width = 0.25
 
-    # PERFIL DE VULNERABILIDADE POR LINGUAGEM (TAXONOMIA CWE)
+    rects1 = plt.bar(x - width, df_lang_sev['Alto'], width, color='#D32F2F')
+    rects2 = plt.bar(x, df_lang_sev['Médio'], width, color='#F57C00')
+    rects3 = plt.bar(x + width, df_lang_sev['Baixo'], width, color='#FBC02D')
+
+    plt.bar_label(rects1, padding=2)
+    plt.bar_label(rects2, padding=2)
+    plt.bar_label(rects3, padding=2)
+
+    posicoes_eixo_x = []
+    rotulos_eixo_x = []
+    for i, linguagem in enumerate(df_lang_sev.index):
+        posicoes_eixo_x.extend([i - width, i, i + width])
+        rotulos_eixo_x.extend(['Alto', f'Médio\n\n{linguagem}', 'Baixo'])
+
+    plt.xticks(posicoes_eixo_x, rotulos_eixo_x)
+
+    plt.title('Quantidade de Falhas por Linguagem e Severidade')
+    plt.ylabel('Quantidade de Falhas')
+
+    plt.tight_layout()
+    plt.savefig('falhas_por_linguagem.png')
+
+
+    # PERFIL DE VULNERABILIDADE POR LINGUAGEM
     print("\n=======================================================")
     print("2. PERFIL DE VULNERABILIDADE (% POR CATEGORIA CWE COBERTA)")
     print("=======================================================")
     
     perfil_absoluto = pd.crosstab(df_exploded['cwe_list'], df_exploded['code_language'])
     
-    # Garante que as colunas existam no crosstab para evitar KeyError
     for lang in ['Python', 'C#']:
         if lang not in perfil_absoluto.columns:
             perfil_absoluto[lang] = 0
