@@ -1,0 +1,13 @@
+venv/
+*.scannerwork
+sonar-project.properties
+*.sonarqube/
+*obj/
+snippets_csharp/
+*bin/
+*Properties/
+*appsettings.json
+*appsettings.Development.json
+*mydb/
+.env
+__pycache__
