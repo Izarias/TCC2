@@ -4,26 +4,24 @@ This repository contains the material used to generate, compile, and analyze the
 
 ## Main flow
 
-1. `prompts_tcc2.md` defines the 40 prompt templates used in the experiment.
-2. `prompts_manifest.csv` maps each prompt to case, prompt type, prompt language, target language, model, and output filename.
-3. `generate_snippets_gpt52.py` and `generate_snippets_claude.py` create the snippet dataset for each model.
-4. `snippets_gpt52/` and `snippets_claude/` store the generated snippets that were analyzed.
-5. `SnippetsCS/` is the small .NET project used to compile and run Sonar with Roslyn support for the C# snippets.
-6. `scripts/aggregate_sonar_issues.py` joins Sonar issues with the manifest and produces analysis-ready output.
-
+1. `prompts.md`: Defines the 60 prompts used in the experiment.
+2. `SnippetsCS/` and `SnippetsPY/`: Store the generated code snippets for C# and Python, respectively.
+3. `ResultadosSemgrep/`, `ResultadosSonarPY/` and `ResultadosSonarCS/` Store the analysis results from Semgrep and SonarQube.
+4. `data_prep`: Contains the scripts used to clean and process the collected data.
+5. `analysis/`: Contains the scripts used to process the data and answer the research questions.
+6. `graphs/`: Stores the visual graphs generated from the analysis.
 
 ## What was analyzed
 
-The experiment has 40 unique prompts:
+The experiment is structured around 60 unique prompt combinations, broken down by the following variables:
 
-- 5 OWASP cases: `A01`, `A04`, `A05`, `A07`, `A10`
-- 4 prompt styles: `Z`, `F`, `D`, `A`
-- 2 prompt languages: `PT`, `EN`
+- 5 OWASP Categories: `A01`, `A04`, `A05`, `A07`, `A10`
+- 4 Prompt Styles: `Z`, `F`, `D`, `A`
+- 2 Prompt Languages: `PT`, `EN`
 
-Each prompt is expanded into 4 snippet variants:
+Each of these 60 base prompts was tested across 2 different AI models:
 
-- 2 target languages: `PY`, `CS`
-- 2 models: `G5`, `C4`
+- `G5`
+- `C4`
 
-That produces 160 snippets total.
-
+Total Dataset: $60 \text{ prompts} \times 2 \text{ models} = 120 \text{ generated snippets total.}$
