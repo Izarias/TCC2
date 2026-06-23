@@ -37,11 +37,11 @@ def preprossessamento_tcc():
 
     def mapear_nivel_severidade(sev_str):
         sev = str(sev_str).strip().upper()
-        if sev in ['BLOCKER', 'ERROR']:
+        if sev in ['BLOCKER', 'CRITICAL', 'ERROR']:
             return 'Alto'
-        elif sev in ['CRITICAL', 'WARNING']:
+        elif sev in ['MAJOR', 'WARNING']:
             return 'Médio'
-        elif sev in ['MAJOR', 'INFO']:
+        elif sev in ['MINOR', 'INFO']:
             return 'Baixo'
         else:
             return 'N/A'
