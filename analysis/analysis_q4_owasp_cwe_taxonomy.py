@@ -59,7 +59,7 @@ def owasp_cwe_taxonomy_analysis():
 
     plt.tight_layout()
 
-    plt.savefig('frequencia_owasp.png')
+    plt.savefig('graphs/frequencia_owasp.png')
 
     plt.clf()
 
@@ -95,7 +95,7 @@ def owasp_cwe_taxonomy_analysis():
 
     plt.tight_layout()
 
-    plt.savefig('frequencia_cwe.png')
+    plt.savefig('graphs/frequencia_cwe.png')
 
     print("\n=======================================================")
     print("3. ÍNDICE DE COBERTURA OWASP TOP 10 (ICO)")

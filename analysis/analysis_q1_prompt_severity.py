@@ -91,7 +91,7 @@ def prompt_severity_analysis():
 
     plt.tight_layout()
 
-    plt.savefig('vulnerabilidades_prompt.png')
+    plt.savefig('graphs/vulnerabilidades_prompt.png')
 
     if 'prompt_type' in df_severidade.columns:
         df_filtrado = df_severidade[['prompt_type', 'Alto', 'Médio', 'Baixo']].set_index('prompt_type')
@@ -111,7 +111,7 @@ def prompt_severity_analysis():
     plt.ylabel('Tipo de Prompt')
     plt.legend(title='Severidade')
     plt.tight_layout()
-    plt.savefig('vulnerabilidades_severidade_horizontal.png')
+    plt.savefig('graphs/vulnerabilidades_severidade.png')
 
 
 if __name__ == "__main__":

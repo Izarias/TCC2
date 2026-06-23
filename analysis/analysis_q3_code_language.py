@@ -72,7 +72,7 @@ def code_language_analysis():
     plt.ylabel('Quantidade de Falhas')
 
     plt.tight_layout()
-    plt.savefig('falhas_por_linguagem.png')
+    plt.savefig('graphs/falhas_por_linguagem.png')
 
 
     # PERFIL DE VULNERABILIDADE POR LINGUAGEM
